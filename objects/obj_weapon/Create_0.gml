@@ -5,6 +5,8 @@ held_by = noone;
 equipped_distance = 25// The spacing between the gun and the entity
 
 dir = 0;
+
+sprite_index = sprite;
 	
 function equip(_pickedUpBy)
 {
@@ -28,5 +30,3 @@ function attack(_startX, _startY)
 		dmg = other.dmg;
 	}
 }
-
-sprite_index = sprite;
