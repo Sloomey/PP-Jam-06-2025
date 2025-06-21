@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"comp_killable",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"comp_killable",
+  "parent":{
+    "name":"Components",
+    "path":"folders/Scripts/Components.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
