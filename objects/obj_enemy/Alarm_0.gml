@@ -6,7 +6,7 @@ if (passive)
 	v = random_range(-1, 1);
 	alarm_set(1,1);
 	
-	wpn.dir = point_direction(x, y, x+h, x+v);
+	wpn.image_angle = point_direction(x, y, x+h, x+v);
 	
 	alarm_set(0, passive_wander_refresh);
 }

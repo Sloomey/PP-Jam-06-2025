@@ -1,4 +1,4 @@
 /// @description ?
 
-x += lengthdir_x(spd, dir)
-y += lengthdir_y(spd, dir)
+x += lengthdir_x(spd, image_angle)
+y += lengthdir_y(spd, image_angle)
