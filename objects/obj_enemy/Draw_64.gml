@@ -1,0 +1,1 @@
+draw_healthbar(x-30, y -30, x + 45, y - 40, hp, c_black, c_red, c_lime, 0, true, true);
