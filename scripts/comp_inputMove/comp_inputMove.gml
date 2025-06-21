@@ -25,5 +25,9 @@ function comp_inputMove(_speed)
     if (mag > 0)
     {
         move_and_collide(dir_x, dir_y, obj_player);
+		
+		return dir // To know which way it is facing
     }
+	
+
 }

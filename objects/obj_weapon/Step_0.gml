@@ -1,6 +1,7 @@
 /// @description ?
 
-if (!instance_exists(held_by)) held_by = noone
+// If the instance dies it drops the gun
+if (!instance_exists(held_by)) held_by = noone;
 
 if (held_by != noone)
 {
