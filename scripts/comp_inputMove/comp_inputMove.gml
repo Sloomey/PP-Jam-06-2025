@@ -24,7 +24,7 @@ function comp_inputMove(_speed)
     // Moving the entity if the magnitude is above 0 (trying to move)
     if (mag > 0)
     {
-        move_and_collide(dir_x, dir_y, obj_player);
+        move_and_collide(dir_x, dir_y, obj_wall);
 		
 		return dir // To know which way it is facing
     }

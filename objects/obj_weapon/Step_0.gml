@@ -5,19 +5,22 @@ if (!instance_exists(held_by)) held_by = noone;
 
 if (held_by != noone)
 {
-	// If the gun is being held by a player
-	if (held_by.object_index == obj_player)
+	if (instance_exists(obj_player))
 	{
-		image_angle = point_direction(x, y, mouse_x, mouse_y);
-	
-		if (mouse_check_button_pressed(mb_left))
+		// If the gun is being held by a player
+		if (held_by.object_index == obj_player)
 		{
-			attack(x, y);
+			image_angle = point_direction(x, y, mouse_x, mouse_y);
+	
+			if (mouse_check_button_pressed(mb_left))
+			{
+				attack(x, y);
+			}
 		}
-	}
-	else
-	{
-		image_angle = point_direction(x, y, obj_player.x, obj_player.y);
+		else
+		{
+			image_angle = point_direction(x, y, obj_player.x, obj_player.y);
+		}
 	}
 	
 	if (image_angle > 90) && (image_angle < 270)

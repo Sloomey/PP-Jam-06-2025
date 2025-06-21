@@ -22,8 +22,11 @@ function attack(_startX, _startY)
 {
 	if (!safety)
 	{
+		var spawn_distance = 22; // Example distance
+		var spawn_x_offset = lengthdir_x(spawn_distance, image_angle);
+		var spawn_y_offset = lengthdir_y(spawn_distance, image_angle);
 		// Making "bullet"
-		with (instance_create_layer(_startX, _startY, "Instances", obj_bullet))
+		with (instance_create_layer(_startX + spawn_x_offset, _startY + spawn_y_offset, "Instances", obj_bullet))
 		{
 			image_angle = other.image_angle;
 			

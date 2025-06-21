@@ -29,7 +29,7 @@
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"name","filters":[],"listItems":[],"multiselect":false,"name":"name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"weapon","varType":2,},
     {"$GMObjectProperty":"v1","%Name":"sprite","filters":[],"listItems":[],"multiselect":false,"name":"sprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"spr_ar","path":"sprites/spr_ar/spr_ar.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"spr_ar","varType":5,},
-    {"$GMObjectProperty":"v1","%Name":"dmg","filters":[],"listItems":[],"multiselect":false,"name":"dmg","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"15","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"dmg","filters":[],"listItems":[],"multiselect":false,"name":"dmg","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"45","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"magSize","filters":[],"listItems":[],"multiselect":false,"name":"magSize","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"20","varType":0,},
   ],
   "resourceType":"GMObject",

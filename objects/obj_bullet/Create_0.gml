@@ -1,4 +1,4 @@
 /// @description Creating variables
 
-spd = 25;
+spd = 15;
 dmg = 0;
