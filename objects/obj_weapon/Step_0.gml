@@ -15,6 +15,10 @@ if (held_by != noone)
 			attack(x, y);
 		}
 	}
+	else
+	{
+		image_angle = point_direction(x, y, obj_player.x, obj_player.y);
+	}
 	
 	if (image_angle > 90) && (image_angle < 270)
 	{
