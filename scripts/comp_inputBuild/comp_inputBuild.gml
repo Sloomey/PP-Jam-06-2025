@@ -27,3 +27,8 @@ function comp_inputBuild(_buildModeToggle, _weaponToHide = noone,)
 	_buildModeToggle = _buildModeToggle ?? false; // This is in case it is undefined
 	return _buildModeToggle
 }
+
+function comp_toggleBuildMode(_buildModeToggle, _weaponToHide = noone,)
+{
+	
+}
