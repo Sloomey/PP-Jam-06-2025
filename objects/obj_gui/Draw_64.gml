@@ -50,6 +50,8 @@ if (obj_control.state == Gamestate.Setup)
 	draw_set_alpha(1);
 	draw_set_halign(fa_center);
 	draw_text(room_width / 2, 20, "Setup (Press Space To Proceed)");
+	draw_set_font(fnt_main_small);
+	draw_text(room_width / 2, 50, "B for Build Menu");
 }
 
 
@@ -69,6 +71,7 @@ if (instance_exists(obj_player))
 		
 		for (var i = 0; i < array_length(DATA.traps); i++)
 		{
+			draw_set_font(fnt_main);
 			if (i == build_menu_select)
 			{
 				draw_text(0 + build_menu_x_padding, 0 + build_menu_y_padding + (build_menu_spacing * i), ">" + DATA.traps[i].name + " ($" + string(DATA.traps[i].price) + ")");
@@ -76,7 +79,11 @@ if (instance_exists(obj_player))
 			else
 			{
 				draw_text(0 + build_menu_x_padding, 0 + build_menu_y_padding + (build_menu_spacing * i), DATA.traps[i].name + " ($" + string(DATA.traps[i].price) + ")");
-			}
+			}	
+			draw_set_font(fnt_main_small);
+			draw_text(0 + build_menu_x_padding, 0 + build_menu_y_padding + (build_menu_spacing * i) + 20, DATA.traps[i].description);
+			
 		}
 	}
 }
+
