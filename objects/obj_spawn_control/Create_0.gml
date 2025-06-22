@@ -1,6 +1,10 @@
 spawn_timer = 60;
 
-alarm_set(0, 360);
+function start_wave()
+{
+	alarm_set(0, 5);
+	
+}
 
 function spawn_player()
 {
