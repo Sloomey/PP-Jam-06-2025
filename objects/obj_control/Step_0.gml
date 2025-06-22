@@ -1,0 +1,1 @@
+if (state == Gamestate.Setup && keyboard_check_pressed(vk_space)) set_state(Gamestate.Play);
