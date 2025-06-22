@@ -62,11 +62,8 @@
     {"id":{"name":"spr_empty","path":"sprites/spr_empty/spr_empty.yy",},},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},},
     {"id":{"name":"spr_home","path":"sprites/spr_home/spr_home.yy",},},
-<<<<<<< Updated upstream
     {"id":{"name":"spr_example_trap","path":"sprites/spr_example_trap/spr_example_trap.yy",},},
-=======
     {"id":{"name":"spr_light","path":"sprites/spr_light/spr_light.yy",},},
->>>>>>> Stashed changes
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
   ],
