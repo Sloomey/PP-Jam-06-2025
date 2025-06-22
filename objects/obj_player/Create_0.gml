@@ -11,7 +11,7 @@ build_mode = false;
 
 dir_facing = 0; // Which direction player is facing
 
-hovering_over_wpn = false;
+hovering_over_wpn = noone;
 
 function TakeDamage(dmg)
 {

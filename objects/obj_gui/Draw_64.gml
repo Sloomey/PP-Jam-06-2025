@@ -20,7 +20,7 @@ if (instance_exists(obj_player))
 		if (!obj_player.wpn.alarm[0])
 		{
 			var magLeft = obj_player.wpn.magLeft;
-			var magSize = obj_player.wpn.magSize
+			var magSize = obj_player.wpn.magSize;
 
 			draw_text(room_width - build_menu_x_padding, room_height - build_menu_y_padding * 5, string(magLeft) + "/" + string(magSize));
 		}
