@@ -1,6 +1,6 @@
 
 /// @description ?
-
+game_over = false;
 money = 35;
 game_round = 1;
 
