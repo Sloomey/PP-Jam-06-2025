@@ -5,7 +5,7 @@ draw_set_font(fnt_main);
 draw_set_halign(fa_right);
 
 draw_set_color(c_white);
-draw_text(room_width - build_menu_x_padding, build_menu_y_padding, "Round: " + string(obj_control.game_round));
+draw_text(room_width - build_menu_x_padding, build_menu_y_padding, "Day " + string(obj_control.game_round));
 draw_set_color(c_yellow);
 draw_text(room_width - build_menu_x_padding, build_menu_y_padding * 3, "$" + string(obj_control.money));
 
