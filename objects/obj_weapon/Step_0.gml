@@ -16,20 +16,18 @@ if (held_by != noone)
 			{
 				attack(x, y);
         
-        // Creating a light from the gun
-			  with (instance_create_layer(x + lengthdir_x(sprite_width / 2, image_angle), y + lengthdir_y(sprite_width / 2, image_angle), layer, obj_light)) 
-			  {
-            alarm_set(0, 2);
-            image_xscale = 0.1;
-            image_yscale = 0.1;
-			  }
-      }
-		  }
-	  else
-		  {
-			image_angle = point_direction(x, y, obj_player.x, obj_player.y);
-			attack(x, y);
+				// Creating a light from the gun
+				with (instance_create_layer(x + lengthdir_x(sprite_width / 2, image_angle), y + lengthdir_y(sprite_width / 2, image_angle), layer, obj_light)) 
+				{
+					alarm_set(0, 2);
+					image_xscale = 0.1;
+					image_yscale = 0.1;
+				}
 			}
+		}
+		else
+		{
+			image_angle = point_direction(x, y, obj_player.x, obj_player.y);
 		}
 	}
 	
