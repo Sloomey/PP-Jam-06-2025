@@ -2,6 +2,7 @@
 /// @description ?
 
 money = 0;
+game_round = 0;
 
 enum Gamestate {
 	Setup,
@@ -32,6 +33,8 @@ function set_state(newstate)
 				{
 					if (held_by == noone) instance_destroy();
 				}
+				
+				obj_spawn_control.start_wave();
 			}
 		break;
 	}

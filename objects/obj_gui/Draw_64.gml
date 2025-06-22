@@ -1,10 +1,13 @@
 /// @description ?
 
 // MONEY
-draw_set_font(fnt_main)
-draw_set_color(c_yellow)
-draw_set_halign(fa_right)
-draw_text(room_width - build_menu_x_padding, build_menu_y_padding, "$" + string(obj_control.money));
+draw_set_font(fnt_main);
+draw_set_halign(fa_right);
+
+draw_set_color(c_white);
+draw_text(room_width - build_menu_x_padding, build_menu_y_padding, "Round: " + string(obj_control.game_round));
+draw_set_color(c_yellow);
+draw_text(room_width - build_menu_x_padding, build_menu_y_padding * 3, "$" + string(obj_control.money));
 
 // MAG SIZE
 
@@ -19,21 +22,25 @@ if (instance_exists(obj_player))
 			var magLeft = obj_player.wpn.magLeft;
 			var magSize = obj_player.wpn.magSize
 
-			draw_text(room_width - build_menu_x_padding, build_menu_y_padding * 3, string(magLeft) + "/" + string(magSize));
+			draw_text(room_width - build_menu_x_padding, room_height - build_menu_y_padding * 5, string(magLeft) + "/" + string(magSize));
 		}
 		else
 		{
-			draw_text(room_width - build_menu_x_padding, build_menu_y_padding * 3, "Reloading");
+			draw_text(room_width - build_menu_x_padding, room_height - build_menu_y_padding * 5, "Reloading");
 		}
+		
+		draw_text(room_width - build_menu_x_padding, room_height - build_menu_y_padding * 3, "DMG: " + string(obj_player.wpn.dmg));
 	}
 	else
 	{
-		draw_text(room_width - build_menu_x_padding, build_menu_y_padding * 3, "0/0");
+		draw_text(room_width - build_menu_x_padding, room_height - build_menu_y_padding * 5, "0/0");
+		draw_text(room_width - build_menu_x_padding, room_height - build_menu_y_padding * 3, "DMG: 0");
 	}
 }
 else
 {
-	draw_text(room_width - build_menu_x_padding, build_menu_y_padding * 3, "0/0");
+	draw_text(room_width - build_menu_x_padding, room_height - build_menu_y_padding * 5, "0/0");
+	draw_text(room_width - build_menu_x_padding, room_height - build_menu_y_padding * 3, "DMG: 0");
 }
 
 // COUNTDOWN
@@ -46,7 +53,7 @@ if (obj_control.state == Gamestate.Setup)
 }
 
 
-
+// BUILD MENU
 if (instance_exists(obj_player))
 {
 	if (obj_player.build_mode) // Build menu
@@ -64,11 +71,11 @@ if (instance_exists(obj_player))
 		{
 			if (i == build_menu_select)
 			{
-				draw_text(0 + build_menu_x_padding, 0 + build_menu_y_padding + (build_menu_spacing * i), ">" + DATA.traps[i].name);
+				draw_text(0 + build_menu_x_padding, 0 + build_menu_y_padding + (build_menu_spacing * i), ">" + DATA.traps[i].name + " ($" + string(DATA.traps[i].price) + ")");
 			}
 			else
 			{
-				draw_text(0 + build_menu_x_padding, 0 + build_menu_y_padding + (build_menu_spacing * i), DATA.traps[i].name);
+				draw_text(0 + build_menu_x_padding, 0 + build_menu_y_padding + (build_menu_spacing * i), DATA.traps[i].name + " ($" + string(DATA.traps[i].price) + ")");
 			}
 		}
 	}

@@ -37,17 +37,18 @@ function comp_inputBuild(_buildModeToggle, _weaponToHide = noone,)
 		
 		if (instance_exists(obj_example_trap))
 		{
-			if (place_meeting(obj_example_trap.x, obj_example_trap.y, obj_trap) || place_meeting(obj_example_trap.x, obj_example_trap.y, obj_wall))
+			if (place_meeting(obj_example_trap.x, obj_example_trap.y, obj_trap) || place_meeting(obj_example_trap.x, obj_example_trap.y, obj_wall) || obj_control.money < DATA.traps[obj_gui.build_menu_select].price)
 			{
 				obj_example_trap.hue = c_red;
 			}
-			else
+			else // If it's not in a wall or trap and if they aren't broke
 			{
 				obj_example_trap.hue = c_white;
 				
 				if (mouse_check_button_pressed(mb_left)) // If selected
-				{		
-					instance_create_layer(obj_example_trap.x, obj_example_trap.y, layer, DATA.traps[obj_gui.build_menu_select]);	
+				{
+					obj_control.money -= DATA.traps[obj_gui.build_menu_select].price;
+					instance_create_layer(obj_example_trap.x, obj_example_trap.y, layer, DATA.traps[obj_gui.build_menu_select]);
 				}
 			}
 		}	

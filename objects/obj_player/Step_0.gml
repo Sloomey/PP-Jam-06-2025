@@ -9,7 +9,7 @@ if (hp <= 0)
 	instance_destroy();
 }
 
-if (keyboard_check_pressed(ord("E")) && hovering_over_wpn != noone)
+if (keyboard_check_pressed(ord("E")) && hovering_over_wpn != noone && !build_mode)
 {
 	wpn.held_by = noone;
 	
