@@ -2,7 +2,7 @@
 /// @description ?
 
 money = 0;
-game_round = 0;
+game_round = 1;
 
 enum Gamestate {
 	Setup,
@@ -13,6 +13,15 @@ enum Gamestate {
 state = Gamestate.Play;
 set_state(Gamestate.Setup);
 
+function get_round()
+{
+	return game_round;
+}
+
+function advance_round()
+{
+	game_round++;
+}
 
 function set_state(newstate)
 {
@@ -20,11 +29,12 @@ function set_state(newstate)
 	{
 		case Gamestate.Setup:
 		
-			obj_lighting_controller.darkness_alpha_real = 0
+			obj_lighting_controller.darkness_alpha_real = 0;
+			
 		break;
 		
 		case Gamestate.Play:
-		
+			
 			if (state == Gamestate.Setup)
 			{
 				obj_lighting_controller.alarm[0] = 1;

@@ -27,7 +27,7 @@ function attack(_startX, _startY)
 		
 		magLeft -= 1;
 		
-		var spawn_distance = 22; // Example distance
+		var spawn_distance = 32; // Example distance
 		var spawn_x_offset = lengthdir_x(spawn_distance, image_angle);
 		var spawn_y_offset = lengthdir_y(spawn_distance, image_angle);
 		// Making "bullet"
