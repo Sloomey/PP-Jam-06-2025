@@ -6,6 +6,8 @@
   "name":"obj_ar",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_weapon","path":"objects/obj_weapon/obj_weapon.yy",},"propertyId":{"name":"name","path":"objects/obj_weapon/obj_weapon.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"AR",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_weapon","path":"objects/obj_weapon/obj_weapon.yy",},"propertyId":{"name":"reloadTime","path":"objects/obj_weapon/obj_weapon.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"150",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_weapon","path":"objects/obj_weapon/obj_weapon.yy",},"propertyId":{"name":"dmg","path":"objects/obj_weapon/obj_weapon.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"irandom_range(35, 40)",},
   ],
   "parent":{
     "name":"Weapons",
