@@ -1,4 +1,4 @@
-if (enemies_spawned < enemies_to_spawn)
+if (enemies_spawned < enemies_to_spawn && obj_control.state == Gamestate.Play)
 {
 	if (irandom(10) <= 6)
 	{

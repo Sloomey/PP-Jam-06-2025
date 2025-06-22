@@ -29,11 +29,12 @@ function set_state(newstate)
 	{
 		case Gamestate.Setup:
 		
-			obj_lighting_controller.darkness_alpha_real = 0
+			obj_lighting_controller.darkness_alpha_real = 0;
+			
 		break;
 		
 		case Gamestate.Play:
-		
+			
 			if (state == Gamestate.Setup)
 			{
 				obj_lighting_controller.alarm[0] = 1;
