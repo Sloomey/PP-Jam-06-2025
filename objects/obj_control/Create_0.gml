@@ -2,7 +2,7 @@
 /// @description ?
 
 money = 0;
-game_round = 0;
+game_round = 1;
 
 enum Gamestate {
 	Setup,
@@ -13,6 +13,15 @@ enum Gamestate {
 state = Gamestate.Play;
 set_state(Gamestate.Setup);
 
+function get_round()
+{
+	return game_round;
+}
+
+function advance_round()
+{
+	game_round++;
+}
 
 function set_state(newstate)
 {

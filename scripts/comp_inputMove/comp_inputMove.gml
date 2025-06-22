@@ -25,9 +25,22 @@ function comp_inputMove(_speed)
     if (mag > 0)
     {
         move_and_collide(dir_x, dir_y, obj_wall);
+		sprite_index = spr_player;
+		if (dir_x < 0)
+		{
+			image_xscale = -1;
+		}
+		else if (dir_x > 0)
+		{
+			image_xscale = 1;
+		}
 		
 		return dir // To know which way it is facing
     }
+	else
+	{
+		sprite_index = spr_player_idle;
+	}
 	
 
 }

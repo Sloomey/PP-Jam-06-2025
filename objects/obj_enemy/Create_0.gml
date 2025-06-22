@@ -6,4 +6,4 @@ wpn.held_by = id;
 
 path_start(Path1, 2, path_action_stop, 1);
 
-alarm_set(0, 30);
+alarm_set(0, 30 + irandom(60));

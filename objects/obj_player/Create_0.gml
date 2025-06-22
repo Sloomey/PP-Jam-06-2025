@@ -12,3 +12,8 @@ build_mode = false;
 dir_facing = 0; // Which direction player is facing
 
 hovering_over_wpn = false;
+
+function TakeDamage(dmg)
+{
+	hp -= dmg;
+}

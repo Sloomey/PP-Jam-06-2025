@@ -1,2 +1,2 @@
-hp = 5;
+hp = 1;
 enemies = [];
