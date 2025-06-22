@@ -11,6 +11,7 @@
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_trap","path":"objects/obj_trap/obj_trap.yy",},"propertyId":{"name":"name","path":"objects/obj_trap/obj_trap.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Campfire",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_trap","path":"objects/obj_trap/obj_trap.yy",},"propertyId":{"name":"price","path":"objects/obj_trap/obj_trap.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"10",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_trap","path":"objects/obj_trap/obj_trap.yy",},"propertyId":{"name":"description","path":"objects/obj_trap/obj_trap.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Heals the player\"",},
   ],
   "parent":{
     "name":"Traps",

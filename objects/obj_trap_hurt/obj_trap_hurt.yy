@@ -10,6 +10,7 @@
   "name":"obj_trap_hurt",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_trap","path":"objects/obj_trap/obj_trap.yy",},"propertyId":{"name":"name","path":"objects/obj_trap/obj_trap.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Hurt Trap",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_trap","path":"objects/obj_trap/obj_trap.yy",},"propertyId":{"name":"description","path":"objects/obj_trap/obj_trap.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Hurts enemies\"",},
   ],
   "parent":{
     "name":"Traps",

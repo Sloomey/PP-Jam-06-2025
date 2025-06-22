@@ -10,6 +10,7 @@
   "name":"obj_trap_slow",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_trap","path":"objects/obj_trap/obj_trap.yy",},"propertyId":{"name":"name","path":"objects/obj_trap/obj_trap.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Slow Trap",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_trap","path":"objects/obj_trap/obj_trap.yy",},"propertyId":{"name":"description","path":"objects/obj_trap/obj_trap.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Slows enemies\"",},
   ],
   "parent":{
     "name":"Traps",
