@@ -30,6 +30,7 @@ function set_state(newstate)
 		case Gamestate.Setup:
 		
 			obj_lighting_controller.darkness_alpha_real = 0;
+			obj_campfire.image_index = 0;
 			
 		break;
 		
@@ -43,6 +44,9 @@ function set_state(newstate)
 				{
 					if (held_by == noone) instance_destroy();
 				}
+				
+				obj_campfire.image_index = 1;
+				
 				
 				obj_spawn_control.start_wave();
 			}
