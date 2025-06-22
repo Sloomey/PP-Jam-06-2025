@@ -10,9 +10,6 @@ if (held_by != noone)
 	{
 		image_angle = point_direction(x, y, mouse_x, mouse_y);
 	
-<<<<<<< Updated upstream
-		if (mouse_check_button_pressed(mb_left))
-=======
 			if (mouse_check_button_pressed(mb_left))
 			{
 				attack(x, y);
@@ -27,7 +24,6 @@ if (held_by != noone)
 			}
 		}
 		else
->>>>>>> Stashed changes
 		{
 			attack(x, y);
 		}
