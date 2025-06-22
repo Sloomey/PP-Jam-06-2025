@@ -10,22 +10,17 @@ if (held_by != noone)
 	{
 		image_angle = point_direction(x, y, mouse_x, mouse_y);
 	
-			if (mouse_check_button_pressed(mb_left))
-			{
-				attack(x, y);
-				
-				// Creating a light from the gun
-				with (instance_create_layer(x + lengthdir_x(sprite_width / 2, image_angle), y + lengthdir_y(sprite_width / 2, image_angle), layer, obj_light)) 
-				{
-					alarm_set(0, 2);
-					image_xscale = 0.1;
-					image_yscale = 0.1;
-				}
-			}
-		}
-		else
+		if (mouse_check_button_pressed(mb_left))
 		{
 			attack(x, y);
+				
+			// Creating a light from the gun
+			with (instance_create_layer(x + lengthdir_x(sprite_width / 2, image_angle), y + lengthdir_y(sprite_width / 2, image_angle), layer, obj_light)) 
+			{
+				alarm_set(0, 2);
+				image_xscale = 0.1;
+				image_yscale = 0.1;
+			}
 		}
 	}
 	else
