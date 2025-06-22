@@ -1,7 +1,7 @@
 
 /// @description ?
 
-money = 0;
+money = 35;
 game_round = 1;
 
 enum Gamestate {

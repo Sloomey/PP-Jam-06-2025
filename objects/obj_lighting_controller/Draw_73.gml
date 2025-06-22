@@ -17,7 +17,7 @@ gpu_set_blendmode(bm_subtract);
 
 var scale = 2 + 0.125 * sin(current_time / light_dim_time);
 
-with (obj_light)
+with (obj_campfire)
 {
 	draw_sprite_ext(spr_light, 0, x, y, image_xscale * scale, image_yscale * scale, 0, c_white, other.darkness_alpha_real);
 }
@@ -28,7 +28,7 @@ surface_reset_target();
 
 draw_surface(light_surface, 0, 0);
 
-with (obj_light)
+with (obj_campfire)
 {
 	draw_sprite_ext(spr_light, 0, x, y, image_xscale * scale, image_yscale * scale, 0, other.light_col, other.light_alpha * other.darkness_alpha_real);
 }
