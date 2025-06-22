@@ -39,6 +39,7 @@
   },
   "name":"PP Game Jam 6-20-25",
   "resources":[
+    {"id":{"name":"fnt_main_small","path":"fonts/fnt_main_small/fnt_main_small.yy",},},
     {"id":{"name":"fnt_main","path":"fonts/fnt_main/fnt_main.yy",},},
     {"id":{"name":"DATA","path":"objects/DATA/DATA.yy",},},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},

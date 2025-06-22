@@ -1,5 +1,10 @@
 /// @description ?
 
+draw_set_font(fnt_main)
+draw_set_color(c_yellow)
+draw_set_halign(fa_right)
+draw_text(room_width - build_menu_x_padding, 0 + build_menu_y_padding, "$" + string(obj_control.money))
+
 if (instance_exists(obj_player))
 {
 	if (obj_player.build_mode) // Build menu
@@ -10,6 +15,7 @@ if (instance_exists(obj_player))
 		
 		draw_set_color(c_white);
 		draw_set_alpha(1);
+		draw_set_halign(fa_left)
 		draw_set_font(fnt_main);
 		
 		for (var i = 0; i < array_length(DATA.traps); i++)

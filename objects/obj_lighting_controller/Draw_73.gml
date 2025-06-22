@@ -1,5 +1,4 @@
 /// @description Drawing extra surfaces
-
 #region Lighting 
 
 var cam = view_get_camera(0);

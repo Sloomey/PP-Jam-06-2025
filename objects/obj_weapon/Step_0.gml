@@ -35,3 +35,17 @@ if (held_by != noone)
 	x = held_by.x + lengthdir_x(20, image_angle);
 	y = held_by.y + lengthdir_y(20, image_angle);
 }
+else // if on the floor basically
+{
+	if (instance_exists(obj_player))
+	{
+		if point_in_circle(obj_player.x, obj_player.y, x, y, hover_radius)
+		{
+			hovered_over = true;
+		}
+		else
+		{
+			hovered_over = false;
+		}
+	}
+}

@@ -2,6 +2,9 @@
 
 held_by = noone;
 
+hovered_over = false;
+hover_radius = 10;
+
 equipped_distance = 25// The spacing between the gun and the entity
 safety = false; // If safety is true then the weapon wont attack
 
