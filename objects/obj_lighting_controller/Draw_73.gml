@@ -21,6 +21,10 @@ with (obj_campfire)
 {
 	draw_sprite_ext(spr_light, 0, x, y, image_xscale * scale, image_yscale * scale, 0, c_white, other.darkness_alpha_real);
 }
+with (obj_light)
+{
+	draw_sprite_ext(spr_light, 0, x, y, image_xscale * scale, image_yscale * scale, 0, c_white, other.darkness_alpha_real);
+}
 
 gpu_set_blendmode(bm_normal);
 
@@ -29,6 +33,10 @@ surface_reset_target();
 draw_surface(light_surface, 0, 0);
 
 with (obj_campfire)
+{
+	draw_sprite_ext(spr_light, 0, x, y, image_xscale * scale, image_yscale * scale, 0, other.light_col, other.light_alpha * other.darkness_alpha_real);
+}
+with (obj_light)
 {
 	draw_sprite_ext(spr_light, 0, x, y, image_xscale * scale, image_yscale * scale, 0, other.light_col, other.light_alpha * other.darkness_alpha_real);
 }
