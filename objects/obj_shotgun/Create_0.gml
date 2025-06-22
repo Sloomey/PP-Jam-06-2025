@@ -27,6 +27,9 @@ function attack(_startX, _startY)
 	if (!safety && magLeft > 0 && can_shoot && !alarm[0])
 	{
 		
+		audio_sound_pitch(shot_sound, random_range(0.85, 1));
+		audio_play_sound(shot_sound, 1, false);
+		
 		magLeft -= 1;
 		can_shoot = false
 		alarm[1] = 40;

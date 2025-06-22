@@ -9,6 +9,7 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_weapon","path":"objects/obj_weapon/obj_weapon.yy",},"propertyId":{"name":"sprite","path":"objects/obj_weapon/obj_weapon.yy",},"resource":{"name":"spr_pistol","path":"sprites/spr_pistol/spr_pistol.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_pistol",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_weapon","path":"objects/obj_weapon/obj_weapon.yy",},"propertyId":{"name":"dmg","path":"objects/obj_weapon/obj_weapon.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"20",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_weapon","path":"objects/obj_weapon/obj_weapon.yy",},"propertyId":{"name":"magSize","path":"objects/obj_weapon/obj_weapon.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"8",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_weapon","path":"objects/obj_weapon/obj_weapon.yy",},"propertyId":{"name":"shot_sound","path":"objects/obj_weapon/obj_weapon.yy",},"resource":{"name":"snd_pistol_shot","path":"sounds/snd_pistol_shot/snd_pistol_shot.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"snd_pistol_shot",},
   ],
   "parent":{
     "name":"Weapons",
