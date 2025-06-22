@@ -12,6 +12,11 @@ function comp_inputBuild(_buildModeToggle, _weaponToHide = noone,)
 		if (_buildModeToggle) // If the build mode is turned on
 		{
 			instance_create_layer(x, y, layer, obj_example_trap)
+			
+			if (mouse_check_button_pressed(mb_left)) // If selected
+			{		
+				instance_create_layer(obj_example_trap.x, obj_example_trap.y, layer, obj_trap_slow);	
+			}
 		}
 		
 		else // If the build mode is turned off

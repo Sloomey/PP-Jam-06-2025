@@ -8,12 +8,17 @@
   ],
   "managed":true,
   "name":"obj_trap_slow",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_trap","path":"objects/obj_trap/obj_trap.yy",},"propertyId":{"name":"name","path":"objects/obj_trap/obj_trap.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Slow Trap",},
+  ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Traps",
+    "path":"folders/Objects/Traps.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_trap",
+    "path":"objects/obj_trap/obj_trap.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
