@@ -13,6 +13,7 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_weapon","path":"objects/obj_weapon/obj_weapon.yy",},"propertyId":{"name":"magSize","path":"objects/obj_weapon/obj_weapon.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"irandom_range(5, 8)",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_weapon","path":"objects/obj_weapon/obj_weapon.yy",},"propertyId":{"name":"dmg","path":"objects/obj_weapon/obj_weapon.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"irandom_range(60, 65)",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_weapon","path":"objects/obj_weapon/obj_weapon.yy",},"propertyId":{"name":"sprite","path":"objects/obj_weapon/obj_weapon.yy",},"resource":{"name":"spr_shotgun","path":"sprites/spr_shotgun/spr_shotgun.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_shotgun",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_weapon","path":"objects/obj_weapon/obj_weapon.yy",},"propertyId":{"name":"shot_sound","path":"objects/obj_weapon/obj_weapon.yy",},"resource":{"name":"snd_shotgun_shot","path":"sounds/snd_shotgun_shot/snd_shotgun_shot.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"snd_shotgun_shot",},
   ],
   "parent":{
     "name":"Weapons",

@@ -4,7 +4,7 @@ draw_self();
 
 if (instance_exists(obj_player))
 {
-	if (obj_player.hovering_over_wpn == id)
+	if (obj_player.hovering_over_wpn == id && obj_player.wpn != id)
 	{
 		draw_set_color(c_black);
 		draw_set_alpha(0.5);

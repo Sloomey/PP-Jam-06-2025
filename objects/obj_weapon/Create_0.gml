@@ -22,9 +22,10 @@ function equip(_pickedUpBy)
 	
 function attack(_startX, _startY)
 {
-	if (!safety && magLeft > 0)
+	if (!safety && magLeft > 0 && !alarm[0])
 	{
-		
+		audio_sound_pitch(shot_sound, random_range(0.9, 1.1));
+		audio_play_sound(shot_sound, 1, false);
 		magLeft -= 1;
 		
 		var spawn_distance = 32; // Example distance

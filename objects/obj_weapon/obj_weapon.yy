@@ -34,6 +34,7 @@
     {"$GMObjectProperty":"v1","%Name":"dmg","filters":[],"listItems":[],"multiselect":false,"name":"dmg","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"irandom_range(40, 45)","varType":4,},
     {"$GMObjectProperty":"v1","%Name":"magSize","filters":[],"listItems":[],"multiselect":false,"name":"magSize","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"irandom_range(15, 20)","varType":4,},
     {"$GMObjectProperty":"v1","%Name":"reloadTime","filters":[],"listItems":[],"multiselect":false,"name":"reloadTime","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"60","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"shot_sound","filters":[],"listItems":[],"multiselect":false,"name":"shot_sound","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
