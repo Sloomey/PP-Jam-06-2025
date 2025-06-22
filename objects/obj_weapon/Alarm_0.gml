@@ -1,0 +1,3 @@
+/// @description Reload
+
+magLeft = magSize;

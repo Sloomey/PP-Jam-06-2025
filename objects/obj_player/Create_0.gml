@@ -10,3 +10,5 @@ wpn.held_by = id;
 build_mode = false;
 
 dir_facing = 0; // Which direction player is facing
+
+hovering_over_wpn = false;

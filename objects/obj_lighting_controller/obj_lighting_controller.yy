@@ -29,8 +29,8 @@
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"darkness_col","filters":[],"listItems":[],"multiselect":false,"name":"darkness_col","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"$2B050000","varType":7,},
     {"$GMObjectProperty":"v1","%Name":"darkness_alpha","filters":[],"listItems":[],"multiselect":false,"name":"darkness_alpha","rangeEnabled":true,"rangeMax":1.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.6","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"light_col","filters":[],"listItems":[],"multiselect":false,"name":"light_col","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"$FFFFFFFF","varType":7,},
-    {"$GMObjectProperty":"v1","%Name":"light_alpha","filters":[],"listItems":[],"multiselect":false,"name":"light_alpha","rangeEnabled":true,"rangeMax":1.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.4","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"light_col","filters":[],"listItems":[],"multiselect":false,"name":"light_col","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"$FF31CCFF","varType":7,},
+    {"$GMObjectProperty":"v1","%Name":"light_alpha","filters":[],"listItems":[],"multiselect":false,"name":"light_alpha","rangeEnabled":true,"rangeMax":1.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.2","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"light_dim_time","filters":[],"listItems":[],"multiselect":false,"name":"light_dim_time","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"900","varType":0,},
   ],
   "resourceType":"GMObject",

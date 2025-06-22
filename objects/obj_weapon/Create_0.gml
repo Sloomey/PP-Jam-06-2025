@@ -1,12 +1,11 @@
 /// @description Initiate variables
 
 held_by = noone;
-
-hovered_over = false;
 hover_radius = 10;
 
 equipped_distance = 25// The spacing between the gun and the entity
 safety = false; // If safety is true then the weapon wont attack
+magLeft = magSize;
 
 sprite_index = sprite;
 	
@@ -23,8 +22,11 @@ function equip(_pickedUpBy)
 	
 function attack(_startX, _startY)
 {
-	if (!safety)
+	if (!safety && magLeft > 0)
 	{
+		
+		magLeft -= 1;
+		
 		var spawn_distance = 22; // Example distance
 		var spawn_x_offset = lengthdir_x(spawn_distance, image_angle);
 		var spawn_y_offset = lengthdir_y(spawn_distance, image_angle);
@@ -44,4 +46,9 @@ function attack(_startX, _startY)
 			image_yscale = 0.1;
 		}
 	}
+}
+
+function reload() 
+{
+	alarm_set(0, reloadTime);
 }

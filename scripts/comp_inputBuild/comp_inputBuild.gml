@@ -35,10 +35,22 @@ function comp_inputBuild(_buildModeToggle, _weaponToHide = noone,)
 			obj_gui.build_menu_select = clamp(obj_gui.build_menu_select - 1, 0, array_length(DATA.traps) - 1);
 		}
 		
-		if (mouse_check_button_pressed(mb_left)) // If selected
-		{		
-			instance_create_layer(obj_example_trap.x, obj_example_trap.y, layer, DATA.traps[obj_gui.build_menu_select]);	
-		}
+		if (instance_exists(obj_example_trap))
+		{
+			if (place_meeting(obj_example_trap.x, obj_example_trap.y, obj_trap) || place_meeting(obj_example_trap.x, obj_example_trap.y, obj_wall))
+			{
+				obj_example_trap.hue = c_red;
+			}
+			else
+			{
+				obj_example_trap.hue = c_white;
+				
+				if (mouse_check_button_pressed(mb_left)) // If selected
+				{		
+					instance_create_layer(obj_example_trap.x, obj_example_trap.y, layer, DATA.traps[obj_gui.build_menu_select]);	
+				}
+			}
+		}	
 	}
 	
 	_buildModeToggle = _buildModeToggle ?? false; // This is in case it is undefined

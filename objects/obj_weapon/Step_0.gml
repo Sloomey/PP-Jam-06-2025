@@ -39,13 +39,13 @@ else // if on the floor basically
 {
 	if (instance_exists(obj_player))
 	{
-		if point_in_circle(obj_player.x, obj_player.y, x, y, hover_radius)
+		if (point_in_circle(obj_player.x, obj_player.y, x, y, hover_radius))
 		{
-			hovered_over = true;
+			obj_player.hovering_over_wpn = id
 		}
-		else
+		else if (obj_player.hovering_over_wpn == id && !point_in_circle(obj_player.x, obj_player.y, x, y, hover_radius))
 		{
-			hovered_over = false;
+			obj_player.hovering_over_wpn = noone;
 		}
 	}
 }

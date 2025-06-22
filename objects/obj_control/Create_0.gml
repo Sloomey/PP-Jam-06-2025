@@ -9,9 +9,6 @@ enum Gamestate {
 	Pause
 }
 
-setup_time = 900;
-start_timer = setup_time;
-
 state = Gamestate.Play;
 set_state(Gamestate.Setup);
 
@@ -21,8 +18,10 @@ function set_state(newstate)
 	state =  newstate;
 	if (newstate == Gamestate.Setup)
 	{
-		start_timer = setup_time;
-		alarm_set(0, start_timer);
+		with (obj_weapon)
+		{
+			if (held_by == noone) instance_destroy();
+		}
 	}
 }
 
