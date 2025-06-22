@@ -77,6 +77,7 @@
     {"id":{"name":"holster_weapon","path":"scripts/holster_weapon/holster_weapon.yy",},},
     {"id":{"name":"move_normalized","path":"scripts/move_normalized/move_normalized.yy",},},
     {"id":{"name":"snd_ar_shot","path":"sounds/snd_ar_shot/snd_ar_shot.yy",},},
+    {"id":{"name":"snd_equip","path":"sounds/snd_equip/snd_equip.yy",},},
     {"id":{"name":"snd_music","path":"sounds/snd_music/snd_music.yy",},},
     {"id":{"name":"snd_pistol_shot","path":"sounds/snd_pistol_shot/snd_pistol_shot.yy",},},
     {"id":{"name":"snd_shotgun_shot","path":"sounds/snd_shotgun_shot/snd_shotgun_shot.yy",},},

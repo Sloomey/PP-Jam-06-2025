@@ -16,6 +16,8 @@ if (keyboard_check_pressed(ord("E")) && hovering_over_wpn != noone && !build_mod
 	wpn = hovering_over_wpn;
 	wpn.held_by = id;
 	hovering_over_wpn = noone;
+	
+	audio_play_sound(snd_equip, 1, false);
 }
 
 if (keyboard_check_pressed(ord("R")) && wpn != noone)
