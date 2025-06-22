@@ -4,7 +4,19 @@ enum Gamestate {
 	Pause
 }
 
-start_timer = 900;
+setup_time = 900;
+start_timer = setup_time;
 
-state = Gamestate.Setup;
-alarm_set(0, start_timer);
+state = Gamestate.Play;
+set_state(Gamestate.Setup);
+
+
+function set_state(newstate)
+{
+	state =  newstate;
+	if (newstate == Gamestate.Setup)
+	{
+		start_timer = setup_time;
+		alarm_set(0, start_timer);
+	}
+}
