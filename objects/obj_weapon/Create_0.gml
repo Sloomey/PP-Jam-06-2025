@@ -22,7 +22,7 @@ function equip(_pickedUpBy)
 	
 function attack(_startX, _startY)
 {
-	if (!safety && magLeft > 0)
+	if (!safety && magLeft > 0 && !alarm[0])
 	{
 		
 		magLeft -= 1;
