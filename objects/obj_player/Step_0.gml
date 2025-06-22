@@ -22,5 +22,5 @@ if (keyboard_check_pressed(ord("E")) && hovering_over_wpn != noone && !build_mod
 
 if (keyboard_check_pressed(ord("R")) && wpn != noone)
 {
-	wpn.reload()
+	wpn.reload();
 }

@@ -57,6 +57,7 @@
     {"id":{"name":"obj_example_trap","path":"objects/obj_example_trap/obj_example_trap.yy",},},
     {"id":{"name":"obj_gui","path":"objects/obj_gui/obj_gui.yy",},},
     {"id":{"name":"obj_home","path":"objects/obj_home/obj_home.yy",},},
+    {"id":{"name":"obj_intro","path":"objects/obj_intro/obj_intro.yy",},},
     {"id":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},},
     {"id":{"name":"obj_lighting_controller","path":"objects/obj_lighting_controller/obj_lighting_controller.yy",},},
     {"id":{"name":"obj_music_control","path":"objects/obj_music_control/obj_music_control.yy",},},
@@ -70,6 +71,7 @@
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"obj_weapon","path":"objects/obj_weapon/obj_weapon.yy",},},
     {"id":{"name":"Path1","path":"paths/Path1/Path1.yy",},},
+    {"id":{"name":"rm_intro","path":"rooms/rm_intro/rm_intro.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"comp_inputBuild","path":"scripts/comp_inputBuild/comp_inputBuild.yy",},},
     {"id":{"name":"comp_inputMove","path":"scripts/comp_inputMove/comp_inputMove.yy",},},
@@ -106,6 +108,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_intro","path":"rooms/rm_intro/rm_intro.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "templateType":"game",
