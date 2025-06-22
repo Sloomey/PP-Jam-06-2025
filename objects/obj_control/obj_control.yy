@@ -11,8 +11,8 @@
   "name":"obj_control",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"BehindScenes",
+    "path":"folders/Objects/BehindScenes.yy",
   },
   "parentObjectId":null,
   "persistent":true,

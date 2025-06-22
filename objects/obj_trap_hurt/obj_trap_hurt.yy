@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_trap_slow",
+  "%Name":"obj_trap_hurt",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_trap_slow",
+  "name":"obj_trap_hurt",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_trap","path":"objects/obj_trap/obj_trap.yy",},"propertyId":{"name":"name","path":"objects/obj_trap/obj_trap.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Slow Trap",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_trap","path":"objects/obj_trap/obj_trap.yy",},"propertyId":{"name":"name","path":"objects/obj_trap/obj_trap.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Hurt Trap",},
   ],
   "parent":{
     "name":"Traps",
@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_trap_slow",
-    "path":"sprites/spr_trap_slow/spr_trap_slow.yy",
+    "name":"spr_trap_hurt",
+    "path":"sprites/spr_trap_hurt/spr_trap_hurt.yy",
   },
   "spriteMaskId":null,
   "visible":true,
